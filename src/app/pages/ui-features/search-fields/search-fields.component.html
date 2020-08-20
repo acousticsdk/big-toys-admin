@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-md-12">
+    <nb-card>
+      <nb-card-header>Данные EasyPay</nb-card-header>
+      <nb-card-body>
+        <form>
+          <div class="form-group">
+            <h5>Логин (EasyPay):</h5>
+            <textarea nbInput required placeholder="Логин" #loginFormEasyPay></textarea>
+          </div>
+          <div class="form-group">
+            <h5>Пароль (EasyPay):</h5>
+            <textarea nbInput required placeholder="Пароль" #passwordFormEasyPay></textarea>
+          </div>
+          <p>{{this.responseMessageEasyPay}}</p>
+          <button type="button" nbButton status="success" (click)="updateEasyPay(loginFormEasyPay.value, passwordFormEasyPay.value)">Сохранить (EasyPay)</button>
+        </form>
+      </nb-card-body>
+    </nb-card>
+   
+  </div>
+</div>
