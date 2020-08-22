@@ -12,11 +12,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/forms/buttons',
   },
   {
-    title: 'Адреса',
-    icon: 'credit-card-outline',
-    link: '/pages/layout/list',
-  },
-  {
     title: 'Пользователи',
     icon: 'person-outline',
     link: '/pages/forms/datepicker',
@@ -32,7 +27,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     link: '/pages/ui-features/typography',
   },
   {
-    title: 'Промокоды',
+    title: 'Адреса',
     icon: 'pricetags-outline',
     link: '/pages/forms/layouts',
   },
