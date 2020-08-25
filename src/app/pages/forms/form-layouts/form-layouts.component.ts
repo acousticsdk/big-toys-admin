@@ -11,8 +11,6 @@ import envimorent from '../../../../../env';
 })
 
 export class FormLayoutsComponent {
-  sum = 0;
-  stockList = [];
   citiesList = [];
   placesList = [];
   usersSettings: any;
@@ -84,18 +82,9 @@ export class FormLayoutsComponent {
       this.usersSettings.columns.city.editor = { type: 'list', config: { list: this.citiesList } };
       this.usersSettings = Object.assign({}, this.usersSettings);
     });
-
-
-
     this.http.get<any>(`http://${envimorent.apiUrl}:4615/products`).subscribe(res => {
-      res.forEach(stock => {
-        this.stockList.push({ value: stock, title: stock});
-
-      });
       this.usersSource.load(res);
-
     });
-
   }
 
   onDeleteConfirm(event): void {
